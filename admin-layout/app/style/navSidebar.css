@@ -1,0 +1,8 @@
+.menu{
+  li.link, summary.link{
+    text-decoration: none;
+    &:hover{
+      color: #5781EB;
+    }
+  }
+}

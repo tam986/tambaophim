@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./style/navSidebar.css";
+import NavSidebar from "./components/navSidebar";
+import UserSuccess from "./components/userSuccess";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +27,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="text-white">
+        <section className="flex flex-row h-screen">
+          <nav className="basic-1/6 h-screen border-r border-[color:var(--border-bottom-color)]">
+            <div className="border-b  border-[color:var(--border-bottom-color)] p-8">
+              <h1>
+                TamBao<span className="text-[#5781EB]">Movies</span>
+              </h1>
+            </div>
+            <div className="border-b border-[color:var(--border-bottom-color)] p-8">
+              {" "}
+              <UserSuccess />{" "}
+            </div>
+            <div className="p-2">
+              {" "}
+              <NavSidebar />{" "}
+            </div>
+          </nav>
+          <main className="basic-5/6 h-screen">
+            <header>đây là header</header>
+            <div> {children}</div>
+          </main>
+        </section>
       </body>
     </html>
   );

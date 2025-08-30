@@ -18,9 +18,17 @@
     --foreground: #ededed;
   }
 }
-
+:root{
+  --theme-color: #141720;
+  --main-color: #5781EB;
+  --second-color: #191F30;
+  --border-bottom-color: #5781EB3D;
+}
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--theme-color);
   font-family: Arial, Helvetica, sans-serif;
+  h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
