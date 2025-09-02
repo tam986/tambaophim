@@ -19,7 +19,7 @@ export default function NavSidebar() {
   return (
     <ul className="menu rounded-box w-56">
       <li className="link">
-        <Link href="/dashboard">
+        <Link href="/">
           <House strokeWidth={1} /> Dashboard
         </Link>
       </li>

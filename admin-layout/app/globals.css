@@ -23,6 +23,8 @@
   --main-color: #5781EB;
   --second-color: #191F30;
   --border-bottom-color: #5781EB3D;
+  scrollbar-color: #5781EB #1a1a1a;
+  scrollbar-width: 2px;
 }
 body {
   background: var(--theme-color);
