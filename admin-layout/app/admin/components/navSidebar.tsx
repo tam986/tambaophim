@@ -92,7 +92,7 @@ export default function NavSidebar() {
         </details>
       </li>
       <li className="link">
-        <Link href="/comment">
+        <Link href="/comments">
           <MessageCircleMore strokeWidth={1} /> Comment
         </Link>
       </li>

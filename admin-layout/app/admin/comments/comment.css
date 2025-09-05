@@ -1,0 +1,136 @@
+/* ====== Layout ====== */
+.comments-container {
+  background-color: #0d1117; /* nền tối */
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ====== Header ====== */
+.comments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.comments-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.comments-header .sort-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.comments-table td {
+  padding: 20px 0;
+}
+
+.comments-header select,
+.comments-header input {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.comments-header input::placeholder {
+  color: #8b949e;
+}
+
+/* ====== Table ====== */
+.comments-table {
+  width: 100%;
+  border-collapse: separate;   /* tách ô ra */
+  border-spacing: 0 12px;      /* cách nhau 12px theo chiều dọc */
+}
+
+.comments-table thead th {
+  padding: 12px 10px;
+  text-align: left;
+  color: #ccc;
+  font-weight: 500;
+}
+
+.comments-table tbody tr {
+  background: #191f30;   /* màu nền từng hàng */
+  border-radius: 20px;
+}
+
+.comments-table tbody td {
+  padding: 10px;
+  color: #fff;
+}
+
+
+.comments-table tbody tr:hover {
+  background-color: #1c2128;
+}
+
+/* bo góc cho từng row */
+.comments-table tbody tr td {
+}
+
+.comments-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ====== Actions ====== */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-right: 6px;
+}
+
+.action-btn.view {
+  background-color: #21262d;
+  color: #facc15; /* vàng */
+}
+
+.action-btn.delete {
+  background-color: #21262d;
+  color: #f87171; /* đỏ */
+}
+
+.action-btn:hover {
+  background-color: #30363d;
+}
+
+/* ====== Pagination ====== */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.pagination button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #161b22;
+  color: #c9d1d9;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #30363d;
+}
+
+.pagination button.active {
+  background-color: #2563eb; /* xanh */
+  color: white;
+}

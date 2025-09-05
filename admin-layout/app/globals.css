@@ -34,3 +34,6 @@ body {
     font-weight: bold;
   }
 }
+.h-screen{
+  height: auto;
+}
