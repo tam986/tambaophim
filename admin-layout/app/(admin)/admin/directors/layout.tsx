@@ -1,4 +1,4 @@
-import PageLayout from "../components/pageLayout";
+import PageLayout from "../../components/pageLayout";
 
 export default function DirectorsLayout({
   children,
